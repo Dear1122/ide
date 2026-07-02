@@ -1,0 +1,10 @@
+{
+  ".git/calculas.sol": {
+    "__sources__": {
+      ".git/calculas.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.20;\r\n\r\ncontract ScientificCalculator {\r\n\r\n    // Addition\r\n    function add(uint256 a, uint256 b) public pure returns (uint256) {\r\n        return a + b;\r\n    }\r\n\r\n    // Subtraction\r\n    function subtract(uint256 a, uint256 b) public pure returns (uint256) {\r\n        require(a >= b, \"Result would be negative\");\r\n        return a - b;\r\n    }\r\n\r\n    // Multiplication\r\n    function multiply(uint256 a, uint256 b) public pure returns (uint256) {\r\n        return a * b;\r\n    }\r\n\r\n    // Division\r\n    function divide(uint256 a, uint256 b) public pure returns (uint256) {\r\n        require(b != 0, \"Cannot divide by zero\");\r\n        return a / b;\r\n    }\r\n\r\n    // Modulus\r\n    function modulus(uint256 a, uint256 b) public pure returns (uint256) {\r\n        require(b != 0, \"Cannot divide by zero\");\r\n        return a % b;\r\n    }\r\n\r\n    // Power (a^b)\r\n    function power(uint256 base, uint256 exponent) public pure returns (uint256) {\r\n        uint256 result = 1;\r\n\r\n        for (uint256 i = 0; i < exponent; i++) {\r\n            result *= base;\r\n        }\r\n\r\n        return result;\r\n    }\r\n\r\n    // Factorial\r\n    function factorial(uint256 n) public pure returns (uint256) {\r\n        require(n <= 20, \"Input too large\");\r\n\r\n        uint256 result = 1;\r\n\r\n        for (uint256 i = 2; i <= n; i++) {\r\n            result *= i;\r\n        }\r\n\r\n        return result;\r\n    }\r\n\r\n    // Integer square root (Babylonian method)\r\n    function sqrt(uint256 x) public pure returns (uint256) {\r\n        if (x == 0) return 0;\r\n\r\n        uint256 z = (x + 1) / 2;\r\n        uint256 y = x;\r\n\r\n        while (z < y) {\r\n            y = z;\r\n            z = (x / z + z) / 2;\r\n        }\r\n\r\n        return y;\r\n    }\r\n}",
+        "file": ".git/calculas.sol"
+      }
+    }
+  }
+}
