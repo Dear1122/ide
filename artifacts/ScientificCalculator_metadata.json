@@ -8,6 +8,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					}
+				],
+				"name": "absolute",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "a",
 						"type": "uint256"
@@ -19,6 +38,44 @@
 					}
 				],
 				"name": "add",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "cube",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "cubeRoot",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -62,6 +119,92 @@
 					}
 				],
 				"name": "factorial",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "fibonacci",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "gcd",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "isPrime",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "lcm",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -201,7 +344,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".git/calculas.sol": "ScientificCalculator"
+			"artifacts/powerclculas.sol": "ScientificCalculator"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -215,12 +358,12 @@
 		"remappings": []
 	},
 	"sources": {
-		".git/calculas.sol": {
-			"keccak256": "0xaaa68b896986d0264af8c9b722d7a23c01f0bbbe6c2cf5b543c0cd91becbd4e6",
+		"artifacts/powerclculas.sol": {
+			"keccak256": "0x5e940690d86f5ffa4c55a932703916781c2495e673eab5d25fcf07883095d1bd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://919ad49d43c9176ffc6fadd8e0a8f554306cbb3cce3ec286d5eebc75d06d11c0",
-				"dweb:/ipfs/QmbEbnkhPqtdxjsKyha2gJoun7Zc2Mt6MJJ6L8baAG6XeB"
+				"bzz-raw://f6755169bb1de723f9a6379848d5add615429a4e8e09b0b0aa69ac8e3a4e1d10",
+				"dweb:/ipfs/QmYhBTfu5asY3f8CAuJes3i1D8H259r4347E7d968AWhFG"
 			]
 		}
 	},
