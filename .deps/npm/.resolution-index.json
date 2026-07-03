@@ -14,5 +14,13 @@
         "file": "artifacts/powerclculas.sol"
       }
     }
+  },
+  "artifacts/game.sol": {
+    "__sources__": {
+      "artifacts/game.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.20;\r\n\r\ncontract ThreeBeadsGame {\r\n    address public owner;\r\n    uint8 private winningBead; // 1, 2, or 3\r\n\r\n    event Played(address player, uint8 guess, bool won);\r\n\r\n    modifier onlyOwner() {\r\n        require(msg.sender == owner, \"Not owner\");\r\n        _;\r\n    }\r\n\r\n    constructor() {\r\n        owner = msg.sender;\r\n        winningBead = 1;\r\n    }\r\n\r\n    function setWinningBead(uint8 bead) external onlyOwner {\r\n        require(bead >= 1 && bead <= 3, \"Invalid bead\");\r\n        winningBead = bead;\r\n    }\r\n\r\n    function guess(uint8 bead) external returns (bool) {\r\n        require(bead >= 1 && bead <= 3, \"Invalid guess\");\r\n\r\n        bool won = (bead == winningBead);\r\n\r\n        emit Played(msg.sender, bead, won);\r\n\r\n        return won;\r\n    }\r\n\r\n    function revealWinningBead() external view onlyOwner returns (uint8) {\r\n        return winningBead;\r\n    }\r\n}",
+        "file": "artifacts/game.sol"
+      }
+    }
   }
 }
